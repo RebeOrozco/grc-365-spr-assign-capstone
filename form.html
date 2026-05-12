@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact Form</title>
+		<link 
+	href="https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap" rel="stylesheet"> 
+<style>
+	} @font-face {
+        font-family: Roboto Mono;
+        src: url("RobotoMono-VariableFont_wght.ttf");
+    } h1 {
+        font: 48pt/1.4em 'Rubik Burned';
+        text-align: center;
+        margin: 54px 0 0 0;
+        color: deeppink;
+        text-shadow: 2px 3px 6px purple;
+    } body {
+        background: lavenderblush;
+    } #page {
+        width: 1024px;
+        height: 1325px;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        margin: 24px auto;
+    } #banner {
+        width: 1024px;
+    } .float-left {
+        width: 300px;
+        float: left;
+        margin: 0 24px 0 0;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } ul {
+        width: 100%;
+        margin-top: -4px;
+    } li {
+        font: 14pt/2.0em Roboto Mono;
+        list-style: none;
+        float
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        background: hotpink;
+    } li {
+        color: white;
+    } a {
+        text-decoration: none;
+    } li:hover, a li:hover {
+        background: #FC8B48;		
+
+    } form {
+        width: 600px;
+        min-height: 600px;
+        padding: 24px;
+        background: pink;
+        margin: 36px auto;
+        border: 1px solid hotpink;
+        box-shadow: 2px 3px 6px hotpink;
+        border-radius: 18px;
+        font: 14pt/1.2em Roboto Mono;
+    } fieldset {
+        margin-top: 18px;
+    } #personal input, #submit {
+        width: 100%;
+        height: 24px;
+        margin-bottom: 12px;
+	} input[type="text"] {
+		width: 98%;
+		font: 14pt/1.4em Roboto Mono;
+		margin-top: 6px;
+	} input[type="submit"] {
+		width: 100px;
+		height: 40px;
+		background: lightgreen;
+		margin: 6px auto;
+		display: block;
+		border-radius: 6px;
+		border: 1px;
+		font: 14pt/1.4em Candara;
+	}
+</style>
+<script language="JavaScript">
+    function toggle(source) {
+        checkboxes = document.getElementsByName('foo');
+        for(var checkbox in checkboxes)
+        checkboxes[checkbox].checked = source.checked;
+    }
+</script>
+</head>
+
+<body>
+	  <div id="page">
+        <img id="banner" src="btsheader.jpg" />
+        <ul>
+			<a href="index.html">
+			<li>Home</li></a>
+        </ul>
+	
+    <form action="https://formsubmit.co/orozcr5@unlv.nevada.edu" method="post">
+    <h1>Contact Me</h1>
+	<input type="text" /><br/>
+	<label>First Name</label><br/>
+	<input type="text"><br/>
+	<label>Last Name</label><br/>
+	<fieldset>
+	<legend>Reason for Contacting</legend>
+	<input type="radio" name="service">
+	<label>Design services</label><br/>
+	<input type="radio" name="service">
+	<label>Design experience</label><br/>
+	<input type="radio" name="service">
+	<label>Design consulting</label><br/>
+	<input type="radio" name="service">
+	<label>Other</label><br/>
+	</fieldset>
+	<fieldset>
+	<legend>Operating System</legend>
+	<input type="checkbox" onClick="toggle(this)">
+	<label>Check/Uncheck all boxes</label><br/>
+	<input type="checkbox" name="foo">
+	<label>Mac OS</label><br/>
+	<input type="checkbox" name="foo">
+	<label>Windows</label><br/>
+	<input type="checkbox" name="foo">
+	<label>UNIX</label><br/>
+	<input type="checkbox" name="foo">
+	<label>Other</label><br/>
+	</fieldset>
+	<fieldset>
+	<legend>Time Frame</legend>
+		<select>
+			<option>This Week</option>
+			<option>This Month</option>
+			<option>This Quarter</option>
+			<option>Not Sure</option>
+		</select>
+	</fieldset>		
+	<label>Message</label><br/>
+	<textarea rows="5" cols="72">
+	</textarea>
+	<input type="submit" />
+    </form>
+</body>
+</html>

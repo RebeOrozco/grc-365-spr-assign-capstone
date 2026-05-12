@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link 
+	href="https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+	} @font-face {
+        font-family: Roboto Mono;
+        src: url("RobotoMono-VariableFont_wght.ttf");
+    } h1 {
+        font: 48pt/1.4em Roboto Mono;
+        text-align: center;
+        text-shadow: 1px 2px 3px pink;
+        margin: 24px 0;
+    } body {
+        background: lavenderblush;
+    } #page {
+        width: 1024px;
+        height: 1325px;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+        margin: 24px auto;
+    } #banner {
+        width: 1024px;	
+    } #textbox {
+        width: 1024px;
+        height: 300px;
+        margin: 0 auto;
+        background:  white;
+        /*box-shadow: 2px 3px 6px gainsboro;
+        border: 1px solid gainsboro;*/
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+    } figure {
+        margin: 24px;
+    } img, .zoom {
+        width: 200px;
+        height: 200px;
+        border: 1px solid gray;
+        /*box-shadow: 2px 3px 6px gray;
+        transition: transform 0.5s;*/
+    } figcaption {
+        font: 12pt/1.4em Roboto Mono;
+        margin-top: 3px;
+    } img:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s;
+    } .zoom:hover {
+        background-size: 105%;
+        transition: background-size 0.5s;
+    } button {
+        width: 120px;
+        height: 40px;
+        background: hotpink;
+        grid-area: 1/1/2/4;
+        border: 1px solid #63A4AA;
+        border-radius: 6px;
+        margin: 12px 0 0 40px;
+        cursor: pointer;
+    } button:hover {
+        background: #FC8B48;
+    } h1 {
+        font: 48pt/1.4em 'Rubik Burned';
+        text-align: center;
+        margin: 54px 0 0 0;
+        color: deeppink;
+        text-shadow: 2px 3px 6px purple;
+    } p {
+        font: 13pt/1.4em Roboto Mono;
+        width: 768px;
+        margin: 24px auto;
+		text-align: center;
+    } .float-left {
+        width: 300px;
+        float: left;
+        margin: 0 24px 0 0;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } ul {
+        width: 100%;
+        margin-top: -4px;
+    } li {
+        font: 14pt/2.0em Roboto Mono;
+        list-style: none;
+        float
+        width: 50%;
+        height: 40px;
+        text-align: center;
+        background: hotpink;
+    } li {
+        color: white;
+    } a {
+        text-decoration: none;
+    } li:hover, a li:hover {
+        background: #FC8B48;
+    } #arrow {
+</style>
+</head>
+
+<body>
+    <div id="page">
+        <img id="banner" src="btsheader.jpg" />
+        <ul>
+			<a href="index.html">
+			<li>Home</li></a>
+        </ul>
+    <h1>Some Art</h1>
+    <div id="textbox">
+		
+		
+        <!-- Leaves photo -->
+	<button onClick="toggleAllDetails()">Open/Close Captions</button>
+    <figure>
+		<a href="magazine proj3-grc250_cover copy.jpg"> 
+    <img src="magazine proj3-grc250_cover copy.jpg" alt="Image 1"></a>
+    <details>
+    <summary>So What Magazine Cover</summary>
+   	This was a cover I create on Adobe Illustrator and Photoshop for my made up Magazine company with Kpop Idol Felix as the cover model. 
+    </details>
+    </figure>
+
+    <figure>
+			<a href="btsconcertposter copy.jpg"> 
+			<img src="btsconcertposter copy.jpg" alt="Image 1"></a>
+    <details>
+    <summary>BTS PTD Tour Poster</summary>
+   	This was a tour promotion poster that I made on Adobe Illustrator and Photoshop based on BTS's limited 3 city tour they did from 2021-2022.  
+    </details>
+    </figure>
+		
+    <figure>
+		<a href="voidposter.jpeg">
+		<img src="voidposter.jpeg" alt="Image 1"></a>
+    <details>
+    <summary>The Void Tour Poster</summary>
+   	This was another tour promotion poster I created on Adobe Illustrator and Photoshop for my made up alternative rock band.
+    </details>
+    </figure>
+
+<script lang="javascript">
+function toggleAllDetails() {
+  const allDetails = document.querySelectorAll('details');
+  allDetails.forEach(detailsElement => {
+
+    if (detailsElement.hasAttribute('open')) {
+      detailsElement.removeAttribute('open');
+    } else {
+      detailsElement.setAttribute('open', true);
+    }
+  });
+}
+</script>
+		
+    </div>
+		
+		   <div id="textbox" >
+        <!-- Leaves photo -->
+	<button onClick="toggleAllDetails()">Open/Close Captions</button>
+    <figure>
+		<a href="RebeccaO.ComicCharactersGray copy.jpg"> 
+    <img src="RebeccaO.ComicCharactersGray copy.jpg" alt="Image 1"></a>
+    <details>
+    <summary>Comic Character Design</summary>
+   	This were two character I created on Procreate for a mini sci-fi comic strip I made. 
+    </details>
+    </figure> 
+			   
+	<figure>
+		<a href="matchazinemockup.jpg"> 
+    <img src="matchazinemockup.jpg" alt="Image 1"></a>
+    <details>
+    <summary>Matcha Zine Guide</summary>
+   	This is a zine booklet that contains matcha recipes, facts about matcha and step by step illustrations.  
+    </details>
+    </figure> 	   
+			   
+	 <figure>
+		<a href="GRC316-JK.ROLLINGSTONE2 copy.jpg"> 
+    <img src="GRC316-JK.ROLLINGSTONE2 copy.jpg" alt="Image 1"></a>
+    <details>
+    <summary>Artist Zine Spread</summary>
+   	This was a zine I illustrated with Procreate and arranged with Adobe Illustrator to highlight a favorite artist of mine named Jungkook. 
+    </details>
+    </figure> 
+			   
+		</div>		   
+</body>
+</html>
